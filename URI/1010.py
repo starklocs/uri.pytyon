@@ -1,6 +1,12 @@
-L1 = input().split("");
-L2 = input().split("");
-cod1, NPeca1, VUnit1 = L1
-cod2, NPeca2, VUnit2 = L2
-total = (int(NPeca1)* float(VUnit1)) + (int(NPeca2) *float(VUnit2));
-print('VALOR A PAGAR:%0.2f'%total);
+L1 = input().split();
+cod1 = int(L1[0]);
+NPeca1 = int(L1[1]);
+VUnit1 = float(L1[2]);
+
+L2 = input().split();
+cod2 = int(L2[0]);
+NPeca2 = int(L2[1]);
+VUnit2 = float(L2[2]);
+total = (NPeca1 * VUnit1) + (NPeca2 * VUnit2);
+print('VALOR A PAGAR: R$ %0.2f'%total);
+
